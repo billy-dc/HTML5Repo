@@ -14,15 +14,27 @@ $(document).ready(function(){
         
         //Verificando campos vacios
         if (clave.length < 6){
-            alert("La clave debería tener mínimo permitido es 5 caracteres");
+            alert("La clave debería tener mínimo 6 caracteres.");
             return false;
         }
         
-        if ( user == '' || clave == '' ){
-            alert("Por favor, complete los campos...!!");
+        if ( mes == '' ){
+            alert("Seleccione mes válido.");
             return false;
         }
         
+        if ( genero == '' ){
+            alert("Seleccione género.");
+            return false;
+        }
+        
+        if (clave.length < 8){
+            alert("Ingrese número de celular válido.");
+            return false;
+        }
+        
+        alert("Validaciones OK");
+
     });
 });
 

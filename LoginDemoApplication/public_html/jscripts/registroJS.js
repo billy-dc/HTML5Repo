@@ -13,7 +13,7 @@ $(document).ready(function(){
         var telefono = $("#telefono").val();
         
         //Verificando campos vacios
-        if (clave.length < 6){
+        if ( clave.length < 6 ){
             alert("La clave debería tener mínimo 6 caracteres.");
             return false;
         }
@@ -28,7 +28,7 @@ $(document).ready(function(){
             return false;
         }
         
-        if (clave.length < 8){
+        if ( telefono.length < 8 ){
             alert("Ingrese número de celular válido.");
             return false;
         }
